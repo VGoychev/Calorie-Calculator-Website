@@ -174,7 +174,7 @@ img{
 	margin-bottom: 20px;
 	opacity: 0;
 	filter: blur(5px);
-	transform: translateX(-300%);
+	transform: translateX(-100%);
 	transition: opacity 1s, transform 1s;
 	transition-delay: 400ms;
 }
@@ -483,9 +483,6 @@ img{
 }
 @media (max-width: 670px) {
 	.navbar .main-menu {
-		display: none;
-	}
-	.navbar .logo-name {
 		display: none;
 	}
 	.navbar .hamburger-button {

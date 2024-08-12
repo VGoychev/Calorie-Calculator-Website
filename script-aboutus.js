@@ -82,8 +82,10 @@ const observer3 = new IntersectionObserver((entries) => {
         console.log(entry)
         if (entry.isIntersecting){
             entry.target.classList.add('show');
+            console.log('Added .show class'); 
         } else {
             entry.target.classList.remove('show');
+            console.log('Removed .show class');
         }
     });
 });
