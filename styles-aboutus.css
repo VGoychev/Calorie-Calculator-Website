@@ -11,6 +11,10 @@
 	--navbar-background: #42444e;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
 	font-family:'Poppins', sans-serif;
 	font-size:16px;
@@ -73,6 +77,20 @@ img{
 }
 .navbar.hide{
 	top:-100px;
+}
+.language-switcher select{
+	padding: 15px;
+	display: flex;
+	margin-left: 10px;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+	transition: 0.5s;
+    background: var(--navbar-background);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 	/*HERO*/
 .hero {

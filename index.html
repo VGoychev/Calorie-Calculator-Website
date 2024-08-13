@@ -27,14 +27,20 @@
 			<div class="main-menu">
 				<ul>
 					<li>
-						<a href="index.html">Home</a>
+						<a href="index.html" data-lang="home">Home</a>
 					</li>
 					<li>
-						<a href="aboutus.html">About Us</a>
+						<a href="aboutus.html" data-lang="aboutUs">About Us</a>
 					</li>
 					<li>
 						<a class="btn" href="https://play.google.com/store/apps/
-						details?id=com.vgoychev.macroscalculator"><i class="fas fa-download"></i> Download</a>
+						details?id=com.vgoychev.macroscalculator" data-lang="download"><i class="fas fa-download"></i> Download</a>
+					</li>
+					<li class="language-switcher">
+						<select id="languageSelectMain">
+							<option value="en">EN</option>
+							<option value="bg">BG</option>
+						</select>
 					</li>
 				</ul>
 			</div>
@@ -47,14 +53,20 @@
 			<div class="mobile-menu">
 				<ul>
 					<li>
-						<a href="index.html">Home</a>
+						<a href="index.html" data-lang="home">Home</a>
 					</li>
 					<li>
-						<a href="aboutus.html">About Us</a>
+						<a href="aboutus.html" data-lang="aboutUs">About Us</a>
 					</li>
 					<li>
 						<a class="btn" href="https://play.google.com/store/apps/
-						details?id=com.vgoychev.macroscalculator"><i class="fas fa-download"></i> Download</a>
+						details?id=com.vgoychev.macroscalculator" data-lang="download"><i class="fas fa-download"></i> Download</a>
+					</li>
+					<li class="language-switcher">
+						<select id="languageSelectMobile">
+							<option value="en">English</option>
+							<option value="bg">Bulgarian</option>
+						</select>
 					</li>
 				</ul>
 			</div>
@@ -65,15 +77,15 @@
 	<section class="hero">
 		<div class="container-hero">
 			<div class="hero-content">
-				<h1 class="hero-heading text-xxl">
+				<h1 class="hero-heading text-xxl" data-lang="heroHeading">
 					Nutrition counting simplified.
 				</h1>
-				<p class="hero-text">
+				<p class="hero-text" data-lang="heroText">
 					Track your daily intake effortlessly and stay on top of your health goals. 
 					With Calorie Calculator, managing your diet has never been so simple. 
 				</p>
 				<div class="hero-buttons">
-					<a href="#" class="btn">
+					<a href="#description" class="btn" data-lang="readMore">
 				 	Read more 
 					</a>
 				</div>
@@ -81,9 +93,9 @@
 		</div>
 	</section>
 	<!--Description-->
-	<section class="description">
+	<section class="description" id="description">
 		<div class="container-sm">
-			<h2 class="description-heading text-xl text-center">
+			<h2 class="description-heading text-xl text-center" data-lang="simpleUI">
 				Simple User Interface, made for everyone! <i class="fas fa-user-friends"></i>
 			</h2>
 		</div>
@@ -98,13 +110,13 @@
 	<!--REVIEWS-->
 	<section class="reviews">
 		<div class="container">
-			<h3 class="reviews-heading text-xl">
+			<h3 class="reviews-heading text-xl" data-lang="whatUsersThink">
 			What users think about the App
 			</h3>
 		</div>
 		<div class="reviews-grid">
 			<div class="card">
-				<p>
+				<p data-lang="firstUserText">
 					"I love how easy this calorie calculator app is to use!
  					The interface is straightforward and clean, making it simple
   					to track my daily intake without any hassle. Highly recommend
@@ -113,12 +125,12 @@
 				<p>
 					⭐⭐⭐⭐⭐ 5/5
 				</p>
-				<p>
+				<p data-lang="firstUserName">
 					Isabella Konova -- via Google Play Store
 				</p>
 			</div>
 			<div class="card">
-				<p>
+				<p data-lang="secondUserText">
 					"This app is fantastic! It has a simple, user-friendly design that makes tracking calories a breeze.
 					 I appreciate not having to navigate through complicated menus.
 					  It’s perfect for anyone wanting a straightforward calorie tracker."
@@ -126,12 +138,12 @@
 				<p>
 					⭐⭐⭐⭐⭐ 5/5
 				</p>
-				<p>
+				<p data-lang="secondUserName">
 					Angel Yordanov -- via Google Play Store
 				</p>
 			</div>
 			<div class="card">
-				<p>
+				<p data-lang="thirdUserText">
 					"I’ve tried several calorie counting apps, but this one stands out for its simplicity.
 					 The UI is very intuitive, and I can log my meals quickly and easily. 
 					 Great for people who want an uncomplicated way to monitor their diet. 
@@ -140,7 +152,7 @@
 				<p>
 					⭐⭐⭐⭐⭐ 5/5
 				</p>
-				<p>
+				<p data-lang="thirdUserName">
 					Emilia Luiz -- via Google Play Store
 				</p>
 			</div>
@@ -150,19 +162,19 @@
 	<!--FAQ-->
 	<section class="faq bg">
 	<div class="container-sm">
-		<h3 class="faq-heading text-xl text-center">
+		<h3 class="faq-heading text-xl text-center" data-lang="faq">
 			Frequently Asked Questions
 		</h3>
 		<div class="faq-content">
 			<div class="faq-group">
 				<div class="faq-group-header">
-					<h4 class="text-md">
+					<h4 class="text-md" data-lang="fQ">
 						Can I track other nutrients besides calories?
 					</h4>
 					<i class="fas fa-minus"></i>
 				</div>
 				<div class="faq-group-body open">
-					<p>
+					<p data-lang="fQa">
 						Yes, our app allows you to track various nutrients, including carbohydrates, proteins and fats.
 						 When you add your meals, the app provides a detailed breakdown of all the nutrients to help you maintain a balanced diet.
 					</p>
@@ -170,13 +182,13 @@
 			</div>
 			<div class="faq-group">
 				<div class="faq-group-header">
-					<h4 class="text-md">
+					<h4 class="text-md" data-lang="sQ">
 						Is my data stored securely?
 					</h4>
 					<i class="fas fa-plus"></i>
 				</div>
 				<div class="faq-group-body">
-					<p>
+					<p data-lang="sQa">
 						Absolutely. All the data you input into the app is stored locally on your device.
 						 We do not send your data to any external servers or store it in the cloud,
 						  ensuring your privacy and security.
@@ -185,13 +197,13 @@
 			</div>
 			<div class="faq-group">
 				<div class="faq-group-header">
-					<h4 class="text-md">
+					<h4 class="text-md" data-lang="tQ">
 						Is the app free to use?
 					</h4>
 					<i class="fas fa-plus"></i>
 				</div>
 				<div class="faq-group-body">
-					<p>
+					<p data-lang="tQa">
 					Yes, the app is completely FREE to use! 
 					It can be downloaded from the Google Play Store.
 					</p>
@@ -199,13 +211,13 @@
 			</div>
 			<div class="faq-group">
 				<div class="faq-group-header">
-					<h4 class="text-md">
+					<h4 class="text-md" data-lang="fourthQ">
 						Can I add new item to the menu list?
 					</h4>
 					<i class="fas fa-plus"></i>
 				</div>
 				<div class="faq-group-body">
-					<p>
+					<p data-lang="fourthQa">
 						Yes, by accessing the menu, on the left side there is a button which navigates you 
 						to the "Add New Meal Screen". You add your custom meal by writing down name, fats, carbs
 						 and proteins per 100g.
@@ -214,13 +226,13 @@
 			</div>
 			<div class="faq-group">
 				<div class="faq-group-header">
-					<h4 class="text-md">
+					<h4 class="text-md" data-lang="fifthQ">
 						Can I delete a meal from Today's meals list or Menu list?
 					</h4>
 					<i class="fas fa-plus"></i>
 				</div>
 				<div class="faq-group-body">
-					<p>
+					<p data-lang="fifthQa">
 						Yes, you can delete an item in Today's meals list by sliding to left. You can also delete a item which is in the Menu list 
 						by clcking over the item and then clicking the delete button.
 					</p>
@@ -238,29 +250,29 @@
 						<a href="index.html">
 						<img src="images/icon.png" alt="logo" width="40" height="40">
 						</a>
-						<a href="index.html">Calorie Calculator</a>
+						<a href="index.html" data-lang="appName">Calorie Calculator</a>
 					</div>
 					<div class="card1">
 						<a class="btn" href="https://play.google.com/store/apps/
-						details?id=com.vgoychev.macroscalculator"><i class="fas fa-download"></i> Download</a>
+						details?id=com.vgoychev.macroscalculator" data-lang="download"><i class="fas fa-download"></i> Download</a>
 					</div>
 				</div>
 				<div>
-					<h4>Join us</h4>
+					<h4 data-lang="joinUs">Join us</h4>
 					<ul>
-						<li><a href="#">Facebook Page</a></li>
-						<li><a href="#">Instagram Page</a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=61564281238656">Facebook</a></li>
+						<li><a href="https://www.instagram.com/caloriecalculator.app">Instagram</a></li>
 					</ul>
 				</div>
 				<div>
-					<h4>Resources</h4>
+					<h4 data-lang="resources">Resources</h4>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="index.html" data-lang="home">Home</a></li>
+						<li><a href="aboutus.html" data-lang="aboutUs">About Us</a></li>
 					</ul>
 				</div>
 				<div>
-					<h4>Contact us at</h4>
+					<h4 data-lang="contact">Contact us at</h4>
 					<ul>
 						<li><a href="mailto:vladimirgoichev@gmail.com">support@caloriecalculator.com</a></li>
 					</ul>
@@ -270,7 +282,7 @@
 				</div>
 			</div>
 		</div>
-		<p>All Rights Reserved &copy; Copyright 2024 Calorie Calculator</p>
+		<p data-lang="copyright">All Rights Reserved &copy; Copyright 2024 Calorie Calculator</p>
 
 	</footer>
 <script defer src="script.js"></script>
