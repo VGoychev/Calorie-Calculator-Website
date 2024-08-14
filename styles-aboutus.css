@@ -79,9 +79,10 @@ img{
 	top:-100px;
 }
 .language-switcher select{
-	padding: 15px;
+	padding: 10px;
 	display: flex;
 	margin-left: 10px;
+	font-size: 18px;
 	justify-content: space-between;
 	align-items: center;
 	font-weight: 600;
@@ -506,7 +507,22 @@ img{
 	.navbar .hamburger-button {
 		display: block;
 	}
+	.navbar .language-switcher select {
+        padding: 8px; /* Increase padding for a larger clickable area */
+        font-size: 18px; /* Larger font size for better readability */
+        width: 160px; /* Increase width for more space */
+        height: 45px; /* Increase height for better touch accessibility */
+        background-color: var(--navbar-background); /* Ensure it matches the navbar */
+        color: #fff;
+        border: none;
+        border-radius: 8px; /* Slightly round the corners for a better look */
+        cursor: pointer;
+    }
 
+    .navbar .language-switcher select:focus {
+        outline: none; /* Remove the default outline */
+        box-shadow: 0 0 5px var(--primary-color); /* Add a subtle shadow on focus */
+    }
 	.container-hero {
 		background: url('images/hero-bg-aboutus-mobile.png') no-repeat;
 		background-size: 380px 290px;
