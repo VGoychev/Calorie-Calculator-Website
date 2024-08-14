@@ -1,3 +1,4 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -92,6 +93,9 @@ img{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.option{
+	padding: 20px;
 }
 	/*HERO*/
 .hero {
